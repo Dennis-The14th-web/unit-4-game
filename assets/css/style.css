@@ -5,7 +5,7 @@ body{
     padding: 0%;
 }
 
-nav {
+.navbar {
     background-color: saddlebrown;
     height: 70px;
     width: 270px;
@@ -92,16 +92,18 @@ h6{
 
 /* ....................MEDIA......................... */
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px),(min-width: 375px){
  
-    nav {
+    .navbar {
         background-color: tomato;
         height: auto;
-        width: 100%;
+        width: 365px;
         text-align: center;
         padding: 10px;
+        margin-left: 5px;
        
     } 
+    
     .col-md-4 {
         background-color: blanchedalmond;
         height: 450px;
@@ -128,13 +130,16 @@ h6{
 
 @media screen and (min-width: 414px),(min-width:411px){
  
-nav {
+.navbar {
     background-color: orangered;
     height: auto;
-    width: 100%;
-    text-align: center;
+    width: 405px;
     padding: 10px;
 }   
+
+.navArea{
+    text-align: center;
+}
 
 .col-md-4 {
     background-color: blanchedalmond;
@@ -161,43 +166,40 @@ nav {
 }
 
 @media screen and (min-width: 640px){
-    nav {
-        background-color: saddlebrown;
-        height: 70px;
-        width: 270px;
+    .navbar {
+        background-color: orangered;
+        height: auto;
+        width: 730px;
         text-align: center;
         padding: 10px;
-        margin-top: 10px;
-        margin-left: 15px;
-    }
-
+    }   
+    
     .col-md-4 {
         background-color: blanchedalmond;
-        height: 480px;
+        height: 580px;
         padding: 20px;
-        margin-top: 10px;
-        margin-left: 30px;
+        margin: 5px 20px 5px 20px;
     }
     
     .col-md-2{
         background-color: rgb(66, 136, 66);
-        margin-top: 10px;
         margin-left: 30px;
         margin-bottom: 10px;
-        height: 100px;
+        width: 200px;
+        height: 50px;
     }
-    
     .col-ms-1{
         background-color: aqua;
         margin-top: 10px;
         margin-left: 10px;
-        height: 100px;
+        height: 50px;
         padding: 5px;
     }
+    
 }
 
 @media screen and (min-width:980px){
-    nav {
+    .navbar {
         background-color: saddlebrown;
         height: 70px;
         width: 270px;
