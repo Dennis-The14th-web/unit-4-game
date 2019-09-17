@@ -27,6 +27,7 @@
 
 //Variables to hold the number of wins, losses, targetscore, usercount, test.  
 var targetScore = ' ';
+var display = ' ';
 var wins = 0;
 var losses = 0;
 var userCount = 0;
@@ -40,6 +41,7 @@ targetScore = Math.floor(Math.random() * 101) +19;
 //Query that hold references to the place in the HTML where we want to display things.
 
 $("#number-to-guess").text(' ' + targetScore);
+$("#display-text").text(' ' + display);
 $("#wins-text").text('Wins: ' + wins);
 $("#losses-text").text('Losses: ' + losses);
 $("#usercount").text(' ' + userCount);
@@ -83,10 +85,14 @@ $(".crystal1").on("click", function()
      
 if (userCount === targetScore) {
     wins++;
+     play();
+    // alert ("You Win!!")
     $("#wins-text").text('Wins: ' + wins);
      reset();
  }else if (userCount >= targetScore) {
      losses++;
+     play();
+    // alert ("You Lost!!")
      $("#losses-text").text('Losses: ' + losses);
      reset();
  }
@@ -100,16 +106,18 @@ $(".crystal2").on("click", function()
     var test1 = $(this).attr("value");
 
     userCount = parseInt(userCount) + parseInt(test1);
-    // console.log("crystal* " + test1);
-    // console.log("usercount*** " + userCount);
+    //  console.log("crystal* " + test1);
+    //  console.log("usercount*** " + userCount);
     $("#usercount").html(userCount);
 
     if (userCount === targetScore) {
         wins++;
+        play();
         $("#wins-text").text('Wins: ' + wins);
         reset();
      }else if (userCount >= targetScore) {
          losses++;
+         play();
          $("#losses-text").text('Losses: ' + losses);
          reset();
      }
@@ -128,10 +136,14 @@ $(".crystal3").on("click", function()
 
     if (userCount === targetScore) {
         wins++;
+        play(); 
+        // alert ("You Win!!")
         $("#wins-text").text('Wins: ' + wins);
         reset();
      }else if (userCount >= targetScore) {
          losses++;
+        play();
+        // alert ("You Lost!!")
          $("#losses-text").text('Losses: ' + losses);
          reset();  
      }
@@ -150,10 +162,12 @@ $(".crystal4").on("click", function()
 
     if (userCount === targetScore) {
         wins++;
+        play();
         $("#wins-text").text('Wins: ' + wins);
         reset();
      }else if (userCount >= targetScore) {
          losses++;
+         play();
          $("#losses-text").text('Losses: ' + losses);
          reset();
      }
@@ -168,7 +182,7 @@ function reset()
     targetScore = Math.floor(Math.random() * 100) +20;
     $("#number-to-guess").html(targetScore);
 
-    // console.log(targetScore);
+    //  console.log(targetScore);
 
 var cryst1 = Math.floor(Math.random() * (12 - 1) + 1);
 var cryst2 = Math.floor(Math.random() * (12 - 1) + 1);
@@ -180,20 +194,29 @@ $("#usercount").html(userCount);
 
 $(".crystal1").attr("value", cryst1);
 var test = $(".crystal1").attr("value");
-// console.log("crystal1 " + test); 
+//  console.log("crystal1 " + test); 
 
 $(".crystal2").attr("value", cryst2);
 var test = $(".crystal2").attr("value");
-// console.log("crystal2 " + test); 
+//  console.log("crystal2 " + test); 
 
 $(".crystal3").attr("value", cryst3);
 var test = $(".crystal3").attr("value");
-// console.log("crystal3 " + test); 
+//  console.log("crystal3 " + test); 
 
 $(".crystal4").attr("value", cryst4);
 var test = $(".crystal4").attr("value");
-// console.log("crystal4 " + test); 
+//  console.log("crystal4 " + test); 
+};
 
+// This function displays the 'Winner :) or loser :(' notification.
+function play(event)
+{
+    if (userCount === targetScore) {
+        $("#display-text").html("You Won!! &#128526;"  + display);  
+     }else if (userCount >= targetScore) {
+        $("#display-text").html("You Lost!! &#128545;" + display);
+     }
 };
 
 
