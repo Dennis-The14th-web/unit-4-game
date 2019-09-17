@@ -15,7 +15,7 @@ body{
     margin-left: 15px;
 }
 
-h2 {
+.h2 {
     font-family: 'Niconne', cursive;
     color: white;
     font-size: 40px;
@@ -38,7 +38,6 @@ div{
 }
 
 .col-md-2{
-    font-family: 'Niconne', cursive;
     background-color: rgb(66, 136, 66);
     margin-top: 10px;
     margin-left: 30px;
@@ -47,7 +46,7 @@ div{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .col-ms-1{
@@ -90,7 +89,7 @@ h6{
 #usercount {
     background-color: teal;
     color: white;
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 10px;
     margin-left: 20px;
     padding: 10px;
