@@ -52,7 +52,8 @@ $("#usercount").text(' ' + userCount);
     var cryst2 = Math.floor(Math.random() * (12 - 1) + 1);
     var cryst3 = Math.floor(Math.random() * (12 - 1) + 1);
     var cryst4 = Math.floor(Math.random() * (12 - 1) + 1);
-    // console.log(cryst1, cryst2, cryst3, cryst4);
+    // console.log(
+        (cryst1, cryst2, cryst3, cryst4);
 
 //Assigns the radomly chose numbers by the computer to each crystal, of different classes.
 
