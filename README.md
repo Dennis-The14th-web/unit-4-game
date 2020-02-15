@@ -6,4 +6,6 @@
 
 - CSS3
 
-- 
+- Bootstrap4
+
+- JavaScript
