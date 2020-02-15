@@ -18,3 +18,6 @@
 
 - The app will reset its value if the user wins or lose adding to scores on both wins oe losses.
 
+## App view and live link
+
+<a href="https://dennis-the14th-web.github.io/unit-4-game/"><img src="assets/images/1-CrystalCollector.jpg"></a>
