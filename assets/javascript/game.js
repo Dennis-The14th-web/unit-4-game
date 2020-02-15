@@ -81,7 +81,7 @@ $(".crystal1").on("click", function()
 
     userCount = parseInt(userCount) + parseInt(test1);
     // console.log("crystal* " + test1);
-    // console.log("usercount*** " + userCount);
+    // console.log("usercount** " + userCount);
     $("#usercount").html(userCount);
      
 if (userCount === targetScore) {
@@ -176,7 +176,6 @@ $(".crystal4").on("click", function()
 
 //This function will help reset the game when there is a win or loss.
 // reset
-
 function reset()
 {
     targetScore = Math.floor(Math.random() * 101) +19;
