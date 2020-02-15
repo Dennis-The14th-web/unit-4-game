@@ -98,7 +98,6 @@ img {
 @-webkit-keyframes spin { 50% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 50% { transform:rotate(360deg);} }
 
-
 /* ....................MEDIA......................... */
 
 @media only screen 
