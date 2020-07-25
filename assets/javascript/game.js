@@ -57,25 +57,25 @@ $("#usercount").text(' ' + userCount);
 
 //Assigns the radomly chose numbers by the computer to each crystal, of different classes.
 
-$(".crystal1").attr("value", cryst1);
+$("#crystal1").attr("value", cryst1);
 var test = $(".crystal1").attr("value");
 // console.log("crystal1 " + test); 
 
-$(".crystal2").attr("value", cryst2);
+$("#crystal2").attr("value", cryst2);
 var test = $(".crystal2").attr("value");
 // console.log("crystal2 " + test); 
 
-$(".crystal3").attr("value", cryst3);
+$("#crystal3").attr("value", cryst3);
 var test = $(".crystal3").attr("value");
 // console.log("crystal3 " + test); 
 
-$(".crystal4").attr("value", cryst4);
+$("#crystal4").attr("value", cryst4);
 var test = $(".crystal4").attr("value");
 // console.log("crystal4 " + test); 
 
 //This logic determines the outcome of the game (wins/losses/usercount/reset), increasing and reducing sores and usercount appropriately.
 
-$(".crystal1").on("click", function()
+$("#crystal1").on("click", function()
 {
     var test1 = $(this).attr("value");
 
@@ -102,7 +102,7 @@ if (userCount === targetScore) {
 
 //This logic determines the outcome of the game (wins/losses/usercount/reset), increasing and reducing sores and usercount appropriately.
 
-$(".crystal2").on("click", function()
+$("#crystal2").on("click", function()
 {
     var test1 = $(this).attr("value");
 
@@ -126,7 +126,7 @@ $(".crystal2").on("click", function()
 
 //This logic determines the outcome of the game (wins/losses/usercount/reset), increasing and reducing sores and usercount appropriately.
 
-$(".crystal3").on("click", function()
+$("#crystal3").on("click", function()
 {
     var test1 = $(this).attr("value");
 
@@ -152,7 +152,7 @@ $(".crystal3").on("click", function()
 
 //This logic determines the outcome of the game (wins/losses/usercount/reset), increasing and reducing sores and usercount appropriately.
 
-$(".crystal4").on("click", function()
+$("#crystal4").on("click", function()
 {
     var test1 = $(this).attr("value");
 
@@ -192,19 +192,19 @@ userCount = 0;
 
 $("#usercount").html(userCount);
 
-$(".crystal1").attr("value", cryst1);
+$("#crystal1").attr("value", cryst1);
 var test = $(".crystal1").attr("value");
 //  console.log("crystal1 " + test); 
 
-$(".crystal2").attr("value", cryst2);
+$("#crystal2").attr("value", cryst2);
 var test = $(".crystal2").attr("value");
 //  console.log("crystal2 " + test); 
 
-$(".crystal3").attr("value", cryst3);
+$("#crystal3").attr("value", cryst3);
 var test = $(".crystal3").attr("value");
 //  console.log("crystal3 " + test); 
 
-$(".crystal4").attr("value", cryst4);
+$("#crystal4").attr("value", cryst4);
 var test = $(".crystal4").attr("value");
 //  console.log("crystal4 " + test); 
 };
